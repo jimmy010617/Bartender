@@ -1,0 +1,377 @@
+.main .purchase_modal .purchase_modal_submitBtn, .main .cart_cartBox_purchaseBtn {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: #027bff;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+  }
+
+  li {
+    list-style: none;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    background-color: #343a40;
+    padding: 10px;
+  }
+
+  #navbar .navbar_container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+
+  /* 홈으로 돌아가기 버튼 */
+  #navbar .navbar_container .homeButton {
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1;
+    text-rendering: auto;
+  }
+
+  #navbar .navbar_container .homeButton:hover {
+    color: #ff6347;
+    transition: color 0.3s;
+  }
+
+  /* 새로고침 버튼 */
+  #navbar .navbar_container .resetButton {
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1;
+    text-rendering: auto;
+  }
+
+  #navbar .navbar_container .resetButton:hover {
+    color: #ff6347;
+    transition: color 0.3s;
+  }
+
+  #navbar .navbar_logoAndList {
+    display: flex;
+    text-align: center;
+    height: 100%;
+  }
+
+  #navbar .navbar_logo {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  #navbar .navbar_list {
+    display: flex;
+    color: #878b8e;
+    align-self: center;
+  }
+
+  #navbar .navbar_list_item {
+    margin: 0px 10px;
+  }
+
+  #navbar .navbar_list_item .navbar_button {
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1;
+    text-rendering: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #navbar .navbar_list_item .navbar_button:hover {
+    color: #ff6347;
+    transition: color 0.3s;
+  }
+
+  #navbar .navbar_list_item_active {
+    color: #ffffff;
+  }
+
+  #searchBox {
+    width: 95%;
+    max-width: 1200px;
+    height: 30px;
+    display: block;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    max-width: 1550px;
+    margin-bottom: 1000px;
+  }
+
+  .main .shop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .cart {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 모든 상품 리스트 */
+  .main .shop_itemList {
+    display: flex;
+    flex-wrap: wrap; /* 상춤 이미지가 아래로 추가되도록 설정 */
+    gap: 20px;       /* 상품 간격 */
+  }
+
+  .main .shop_itemList_item {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px solid black;
+    position: relative;
+    cursor: move;
+    opacity: 0;
+    transform: translateY(-50px); /* 대각선 방향으로 이동 */
+    animation: appear 1s forwards;
+    overflow: hidden;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* 대각선에서 시작 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0); /* 최종적으로 원위치로 이동 */
+    }
+  }
+
+  .main .shop_itemList_img {
+    height: 170px;
+    transition: 0.3s ease;
+  }
+
+  .main .shop_itemList_img:hover {
+    transform: scale(1.1);
+  }
+
+  .main .shop_itemList_item_productName,
+  .main .shop_itemList_item_branName {
+    margin: 10px;
+  }
+
+  .main .shop_itemList_item_branName {
+    margin-top: 0px;
+  }
+
+  .main .shop_itemList_item_price {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+  }
+
+  .main .cart_cartBox {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* top: 20px; /* 스크롤 시 화면 상단에서 20px 떨어진 위치에 고정 */
+    /* transition: transform 0.3s ease-in-out;  부드러운 움직임 */ 
+  }
+
+  .main .cart_cartBox_dropArea {
+    width: 250px;
+    height: 250px;
+    background-color: #343a40;
+    text-align: center;
+    line-height: 250px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .main .cart_cartBox_itemList_item img {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .main .cart_cartBox_itemList_item {
+    position: relative;
+    margin: 15px 0;
+  }
+
+  /* 상품 삭제 버튼 */
+  .main .cart_cartBox_itemList_item .removeBtn {
+    position: absolute;
+    top: 10px; /* 상품 상단 여백 */
+    right: 10px; /* 상품 오른쪽 여백 */
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .main .cart_cartBox_itemList_item .removeBtn:hover {
+    color: red;
+    transition: 0.3s color;
+  }
+
+  .main .cartItem_productName {
+    margin-bottom: 0px;
+  }
+
+  .main .cartItemQuantity_label {
+    font-size: 14px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .main .cartItemInput {
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .main .cart_cartBox_totalPrice {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .main .purchase_modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+
+  .main .purchase_modal .purchase_modal_cancelBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  .main .purchase_modal input {
+    width: 50%;
+    height: 30px;
+  }
+
+  .main .purchase_modal span {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .main .blackBackground {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;   
+  }
+
+  .main .receiptContainer {
+    display: none;
+  }
+
+  .main #receipt {
+    background-color: beige;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .main .receiptBtn {
+    position: absolute;
+    top: 730px;
+    left: 700px;
+    z-index: 20;
+  }
+
+  .main #btn-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .main .btn-back-to-top:hover {
+    background-color: #333;
+  }

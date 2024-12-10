@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonShine : 신의 글라스</title>
+    <!-- 연결 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/logo/logo1.ico">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">🌙 MoonShine</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#owner" class="nav-link">Owner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#signature" class="nav-link">Signature</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">The glass of God</h2>
+                    <h3 class="subtitle">영혼을 구하는 마지막 한 잔</h3>
+                    <p class="description">"세상에는 절대로 손님을 배신하면 안 되는 일이 두 가지 있습니다.
+                        하나는 의사, 약제사, 또 다른 하나는 바텐더. 술에 들어 있는 건 영혼입니다, 
+                        영혼이기에 사람의 영혼도 위로할 수 있는 거죠."</p>
+                    <div class="buttons">
+                        <a href="/OrderLine/Order.html" class="button order-now">Order Now</a>
+                        <a href="#contact" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/logo/logo1.jpg" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="owner">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/owner/ownerBartender_.png" alt="Owner Bartender" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Owner Bartender</h2>
+                    <p class="text"><strong>佐々倉 溜 (SASAKURA RYU)</strong><br>
+                        - Bar KAZE(風) : 元 Junior Bartender (1995 ~ 1999)<br>
+                        - Hotel Paris Litz : 元 Chief Bartender (2000 ~ 2005)<br>
+                        - Bar Lapin : 元 Junior Bartender (2005 ~ 2006)<br>
+                        - Bar Eden Hall : 元 Chief Bartender (2006 ~ 2009)<br>
+                        - Bar Eden Hall R&T : 元 Owner Bartender (2009 ~ 2012)<br>
+                        - Bar MoonShine : 現 Owner Bartender (2012 ~ )
+                    </p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu section-->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/menu/hot-cocktail.png" alt="Hot Cocktail" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Hot Cocktail</h3>
+                            <p class="text">춥고 기운이 없을 때 마시면 마음이 채워집니다.
+                            손님 입맛대로 요구 사항을 말하면 반영해서 제조해드립니다.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/menu/cold-cocktail.png" alt="Cold Cocktail" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Cold Cocktail</h3>
+                            <p class="text">덥고 지칠 때 한 잔하면 기분이 상쾌해집니다.
+                            바텐더에게 추가 요청 사항을 말하면 반영해서 커스텀해드립니다. </p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/menu/whiskey.png" alt="Whiskey" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Whiskey</h3>
+                            <p class="text">추울 때도 위스키 외로울 때도 위스키, 
+                            바텐더가 당신의 기분과 취향에 따라 알맞은 위스키를 추천해드립니다.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/menu/snack.png" alt="Snack" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Snack</h3>
+                            <p class="text">술과 함께 할 수 있는 간단한 안주류를 제공합니다.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/menu/food.png" alt="Food" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Food</h3>
+                            <p class="text">빈속으로 술을 마시면 매우 위험하므로 
+                            적당히 배를 채울 수 있는 메뉴로 제공해드립니다.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/menu/wine.png" alt="Wine" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Wine</h3>
+                            <p class="text">안주와 어울리는 와인을 추천해드립니다.
+                            초보자분은 바텐더에게 문의해주세요.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials-section" id="signature">
+            <h2 class="section-title">Signature</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="/images/signature/signature1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Tom & Jerry</h3>
+                                <i class="feedback">럼과 브랜디 베이스로, 달걀술에 럼과 코냑을 넣어 마시는 칵테일.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="/images/signature/signature2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Golden Cadillac</h3>
+                                <i class="feedback">갈리아노와 크렘 드 카카오가 들어가 전체적으로 부드럽고 달달하면서도 고급스러운 느낌의 칵테일.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="/images/signature/signature3.jpg" alt="User" class="user-image">
+                                <h3 class="name">American Beauty</h3>
+                                <i class="feedback">브랜디와 비터, 오렌지 향, 소량의 포트와인이 첨가된 달달하면서 씁슬한 칵테일.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="/images/signature/signature4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Millon Dollar</h3>
+                                <i class="feedback">진을 베이스로 스위트 베르무트와 파인애플 주스와 계란 흰자를 넣어 만든 부드러운 느낌의 칵테일.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="/images/signature/signature5.jpg" alt="User" class="user-image">
+                                <h3 class="name">MizuWari</h3>
+                                <i class="feedback">오너 바텐더만의 비법으로 단순한 미즈와리가 아닌 칵테일 같은 느낌의 술.</i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery2.jpeg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="/images/gallery/gallery6.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>경기도 안양시 동안구 임곡로 29 대림대학교</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@BarMoonShine.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(02) 266-44087</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Tuesday - Friday : 18:00 - 02:00</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday - Sunday : 18:00 - 04:00</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Every Monday : Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.BarMoonShine.kr</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+         <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">ⓒ 2024 BarMoonShine</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">●</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+         </footer>
+    </main>
+    <!-- 스와이퍼 스크립트 링크 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- 커스텀 스크립트 링크 -->
+    <script src="js/script.js"></script>
+</body>
+</html>

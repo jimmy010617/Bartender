@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/6cca727381.js" crossorigin="anonymous"></script>
+    <title>주문시스템</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navbar_container">
+            <div class="navbar_logoAndList">
+                <i class="fa-solid fa-credit-card navbar_logo"> 주문하기</i>
+                <ul class="navbar_list">
+                    <li class="navbar_list_item"><button class="navbar_button" data-category="보드카">보드카</button></li>
+                    <li class="navbar_list_item"><button class="navbar_button" data-category="진">진</button></li>
+                    <li class="navbar_list_item"><button class="navbar_button" data-category="럼">럼</button></li>
+                    <li class="navbar_list_item"><button class="navbar_button" data-category="데킬라">데킬라</button></li>
+                    <li class="navbar_list_item"><button class="navbar_button" data-category="리큐르">리큐르</button></li>
+                    <li class="navbar_list_item">
+                        <button class="navbar_button" data-category="위스키">
+                            <i class="fa-solid fa-whiskey-glass"> 위스키</i>
+                        </button>
+                    </li>
+                    <li class="navbar_list_item">
+                        <button class="navbar_button" data-category="와인">
+                            <i class="fa-solid fa-wine-glass"> 와인</i>
+                        </button>
+                    </li>
+                    <li class="navbar_list_item">
+                        <button class="navbar_button" data-category="안주">
+                            <i class="fa-solid fa-burger"> 안주</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="reset_button">
+                <a href="/OrderLine/Order.html" class="resetButton">
+                    <i class="fa-solid fa-rotate-left"> 처음으로</i>
+                </a>
+            </div>
+            <div class="navbar_btnBox">
+                <a href="/Home.html" class="homeButton">
+                    <i class="fa-solid fa-house"> 홈으로 돌아가기</i>
+                </a>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="searchBox">
+        <form>
+            <input type="text" id="searchBox" placeholder="칵테일 이름 또는 베이스를 적어주세요(ex. 잭콕, 럼콕, 보드카, 브랜디....)">
+            <input type="text" style="display: none;">
+        </form>
+    </div>
+    <div class="main">
+        <section class="shop">
+            <h1 class="shop_header">
+                <i class="fa-solid fa-list"> 모든 상품 리스트</i>
+            </h1>
+            <div class="shop_itemList"></div>
+        </section>
+        <section class="cart">
+            <h1 class="cart_header">
+                <i class="fa-solid fa-cart-plus"> 장바구니</i>
+            </h1>
+            <div class="cart_cartBox">
+                <div class="cart_cartBox_dropArea">
+                    이 곳에 상품을 놓아주세요.
+                </div>
+                <div class="cart_cartBox_itemList"></div>
+                <span>total <span class="cart_cartBox_totalPrice">0</span>₩</span>
+                <button class="cart_cartBox_purchaseBtn">구매하기</button>
+            </div>
+            <div class="blackBackground">
+                <div class="purchase_modal">
+                    <button class="purchase_modal_cancelBtn">X</button>
+                    <h1>Thank you for your purchase!</h1>
+                    <h3>테이블 번호와 연락처를 입력해주세요!</h3>
+                    <form>
+                        <span>Table Number</span>
+                        <input type="text" id="tbnumInput" placeholder="테이블 번호를 입력해주세요.">
+                        <span>Phone Number</span>
+                        <input type="tel" id="tellInput" placeholder="연락처를 입력해주세요.">
+                    </form>
+                    <button class="purchase_modal_submitBtn">주문하기</button>
+                </div>
+                <div class="receiptContainer">
+                    <canvas id="receipt" width="600" height="600"></canvas>
+                    <button class="receiptBtn">닫기</button>
+                </div>
+            </div>
+        </section>
+        <button onclick="backToTop()" id="btn-back-to-top" title="위로 가기">Top</button>
+    </div>
+</body>
+</html>
